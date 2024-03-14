@@ -8,7 +8,8 @@
 <body style="background-color: blueviolet;">
 
     <form action="javascript:void(0)">
-    <fieldset style="width: 30%; background-color: red; ">
+    <fieldset style="width: 30%; background-color: aqua; ">
+        <legend style="width: 30%; background-color: aquamarine; border: 1px solid;"
         <label for="nev">Add meg a neved!</label>
         <input type="text" name="data" id="nev" placeholder="neved" <br>
         <label for="email">Add meg a Emailed!</label>
@@ -20,5 +21,12 @@
         <input type="submit" value="BEKÜLDÉS" >
     </fieldset>
 </form>
+    <script>
+        function set() {
+            localStorage.setItem("name", nev.value);
+            localStorage.setItem("email", mail.value);
+            localStorage.setItem("password", pass.value);
+        }
+    </script>
 </body>
 </html>
